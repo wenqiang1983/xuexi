@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>导航条</title>
+    <style type="text/css">
+        html {
+            font-size: 62.5%;
+        }
+
+        body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .header {
+            width: 100%;
+            background: #22292c;
+            height: 70px;
+            line-height: 70px;
+        }
+
+        .h-left, .dot, h1 {
+            height: 100%;
+            background: #22292c;
+        }
+
+        .h-left span {
+            width: 20%;
+            font-size: 2.6em;
+            color: white;
+        }
+
+        .h-left .arrow {
+            font-size: 3.6em;
+            font-weight: blod;
+            padding: 0 10px;
+        }
+
+        .header .h-left {
+            width: 30%;
+            float: left;
+        }
+
+        .header h1 {
+            width: 40%;
+            float: left;
+            text-align: center;
+            font-size: 3.6em;
+            color: white;
+        }
+
+        .header .dot {
+            width: 30%;
+            float: right;
+            position: relative;
+        }
+
+        .dot img {
+            position: absolute;
+            width: 18%;
+            /*max-width: 37px;*/
+            right: 10%;
+            top: 40%;
+        }
+
+        .content {
+            width: 100%;
+            background: #68cdd5;
+            position: relative;
+        }
+
+        .circle {
+            width: 100%;
+        }
+
+        .circle img {
+            width: 8.4%;
+            /*max-width: 54px;*/
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 10%;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            width: 100%;
+            max-width: 180px;
+            padding-top: 20%;
+        }
+
+        .wenzi {
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 100px;
+            line-height: 200%;
+            font-size: 3em;
+            color: white;
+            padding-bottom: 100px;
+        }
+
+        .footer {
+            width: 100%;
+            margin: 0 auto;
+            background: #68cdd5;
+            margin-bottom: 100px;
+        }
+
+        .shuzi {
+            width: 33%;
+            float: left;
+        }
+
+        .shuzi img {
+            width: 100%;
+            max-width: 84px;
+
+        }
+
+        .shuzi p {
+            height: 24px;
+            color: white;
+            padding-left: 12px;
+        }
+
+        .pinyin {
+            width: 33%;
+            float: right;
+        }
+
+        .pinyin img {
+            width: 100%;
+            max-width: 84px;
+            margin-left: 40%
+        }
+
+        .pinyin p {
+            height: 24px;
+            color: white;
+            padding-left: 60%;
+
+        }
+
+        .box {
+            width: 50%;
+            margin: 0 auto;
+            height: 200px;
+        }
+
+        @media screen and (max-width: 540px) {
+            .container {
+                font-size: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="h-left">
+            <span class="arrow"><</span><span>返回</span>
+        </div>
+        <h1>魔镜</h1>
+
+        <div class="dot">
+            <img src="images/threedot.png"/>
+        </div>
+    </div>
+    <div class="content">
+        <div class="circle"><img src="images/circle.png"/></div>
+        <div class="logo"><img src="images/logo.png"/></div>
+        <div class="wenzi">
+            葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下桌游聚会道具。
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="box">
+            <div class="shuzi">
+                <img src="images/shuzi.png"/>
+
+                <p>290560993</p>
+            </div>
+
+            <div class="pinyin">
+                <img src="images/pinyin.png"/>
+
+                <p>BJPTTeng</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
