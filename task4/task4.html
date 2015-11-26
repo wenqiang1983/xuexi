@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>结果页布局</title>
+    <style type="text/css">
+        html {
+            font-size: 62.5%;
+        }
+
+        body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 8em;
+            line-height: 8em;
+            background: #29bde0;
+        }
+
+        .h-left {
+            position: relative;
+            width: 20%;
+            float: left;
+            text-align: center;
+
+        }
+
+        .h-left img {
+            margin-top: 2em;
+            width: 40%;
+            max-width: 50px;
+
+        }
+
+        .header h1 {
+            float: left;
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 3.4em;
+            color: white;
+        }
+
+        .h-right {
+            position: relative;
+            width: 20%;
+            float: left;
+            text-align: center;
+        }
+
+        .h-right img {
+            margin-top: 2em;
+            width: 35%;
+            maxwidth: 44px;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            background: #29bde0;
+        }
+
+        .content-a {
+            width: 100%;
+            background: #29bde0;
+        }
+
+        .bp {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .bp img {
+            width: 50%;
+            max-width: 350px;
+        }
+
+        .content-a-cb {
+            margin: 2% 13%;
+            color: #ffc865;
+            font-size: 3em;
+            line-height: 1.2em;
+            font-weight: bold;
+        }
+
+        .atricle-a p {
+            margin: 1% 13%;
+            font-size: 2.6em;
+            color: white;
+        }
+
+        .content-b {
+
+            width: 100%;
+            background: white;
+        }
+
+        .content-b h1 {
+            width: 50%;
+            float: left;
+            padding-left: 13%;
+            font-size: 3em;
+            margin-top: 1%;
+            color: black;
+        }
+
+        .content-b span {
+            line-height: 230%;
+            font-size: 2em;
+            color: #e4e4e4;
+        }
+
+        .cbfirst {
+            margin-bottom: 2em;
+        }
+
+        .cbfirst p {
+            margin: 1% 13%;
+            font-size: 2.6em;
+            color: #a6a6a6;
+        }
+
+        .cbsecond {
+            margin-bottom: 2em;
+        }
+
+        .cbsecond p {
+            margin: 1% 13%;
+            font-size: 2.6em;
+            color: #a6a6a6;
+        }
+
+        .footer {
+            position: relative;
+            font-size: 3em;
+            height: 5em;
+            opacity: .8;
+            top: -2em;
+            background: #99dff0;
+        }
+
+        .f-left {
+            width: 40%;
+            float: left;
+            text-align: center;
+            margin: 4% 5%;
+            border-radius: .5em;
+            background: #f66f6f;
+        }
+
+        .f-left p {
+            color: white;
+        }
+
+        .f-right {
+            width: 40%;
+            margin: 4% 5%;
+            text-align: center;
+            float: left;
+            border-radius: .5em;
+            background: #fbb435;
+        }
+
+        .f-right p {
+            color: white;
+        }
+
+        @media screen and (max-width: 540px) {
+            .container {
+                font-size: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="h-left">
+            <img src="images/h-left.png"/>
+        </div>
+        <h1>游戏结果</h1>
+
+        <div class="h-right">
+            <img src="images/h-right.png"/>
+        </div>
+    </div>
+    <div cla="content">
+        <div class="content-a">
+            <div class="bp">
+                <img src="images/victory.png"/>
+            </div>
+            <div class="content-a-cb">
+                太棒了！你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！
+            </div>
+            <div class="atricle-a">
+                <p>本次游戏共计用时0小时25分钟</p>
+
+                <p>杀&nbsp;手0人&nbsp;&nbsp;警&nbsp;察1人&nbsp;&nbsp;平&nbsp;民6人</p>
+
+                <p>狙击手0人&nbsp;&nbsp;医&nbsp;生1人</p>
+
+                <p>卧底词汇：爱新觉罗</p>
+
+                <p>水民词汇：努尔哈赤</p>
+            </div>
+        </div>
+        <div class="content-b">
+            <div class="cbfirst">
+                <h1>第1天</h1>&nbsp;&nbsp;&nbsp;<span>0小时07分</span>
+
+                <p>晚上：5号被杀手杀死，5号是水民</p>
+
+                <p>白天：8号被全民投票投死，8号是杀手</p>
+            </div>
+            <hr style="color:#dddddd;">
+            <div class="cbsecond">
+                <h1>第2天</h1>&nbsp;&nbsp;&nbsp;<span>0小时07分</span>
+
+                <p>晚上：5号被杀手杀死，5号是水民</p>
+
+                <p>白天：8号被全民投票投死，8号是杀手</p>
+            </div>
+            <hr style="color:#dddddd;">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f-left">
+            <p>再来一局</p>
+        </div>
+        <div class="f-right">
+            <p>上传并分享</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
