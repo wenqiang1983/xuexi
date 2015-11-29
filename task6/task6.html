@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="task6.css"/>
+    <title>投票</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body, p, div, img {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .header {
+            background: #29bde0;
+            text-align: center;
+        }
+
+        .header img {
+            width: 6%;
+            max-width: 40px;
+        }
+
+        .header span {
+            padding: 0 33%;
+            font-size: 3.4em;
+            color: white;
+            line-height: 250%;
+        }
+
+        .control {
+            background: #b9e9f5;
+            position: relative;
+        }
+
+        .control p {
+            width: 100%;
+            font-size: 2.6em;
+            color: #6a7b7f;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            text-indent: 7%;
+            /*background: #b9e9f5 url("images/play.png") no-repeat right;*/
+            /*background-position: 96.5%;*/
+            /*background-size: 8%;*/
+        }
+
+        .control img {
+            position: absolute;
+            width: 8.13%;
+            max-width: 52px;
+            right: 3.5%;
+            top: 17%;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 100%;
+            background: #29bde0;
+            padding-bottom:50%;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .triangle-down {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid #b9e9f5;
+            margin-left: 15%;
+        }
+
+        .content P {
+            color: white;
+            font-size: 2.4em;
+            margin-left: 15%;
+            margin-top: 2%;
+            margin-bottom: 4%;
+        }
+
+        .bbox {
+            width: 21.25%;
+            float: left;
+            margin: 1% 5.8%;
+        }
+
+        .box {
+            border: 2px solid white;
+        }
+
+        .career {
+            background: #f5c97b;
+            font-size: 3em;
+            text-align: center;
+            line-height: 300%;
+            color: #565656;
+        }
+
+        .num {
+            background: #83b09a;
+            font-size: 2.3em;
+            color: white;
+            text-align: center;
+        }
+
+        .sprite {
+            width: 100%;
+            max-width: 136px;
+            margin-top: 10%;
+            opacity: 0;
+        }
+        .sprite:hover {
+            opacity: 1;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 640px;
+            background: #29bde0;
+            text-align: center;
+            border-top-style: solid;
+            border-top-color: white;
+        }
+
+        .footer p {
+            margin: 5% auto;
+            width: 80%;
+            color: white;
+            font-size: 4em;
+            line-height: 150%;
+            background: #fbb435;
+        }
+
+        @media screen and (max-width: 560px) {
+            .container {
+                font-size: 85%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                font-size: 60%;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .container {
+                font-size: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <p><img src="images/hf.png"/><span>投票</span><img src="images/hr.png"/></p>
+    </div>
+    <div class="control">
+        <p>发言讨论结束，大家请投票</p>
+        <img src="images/play.png" onclick="music.play()"/>
+        <audio id="music" controls="controls" hidden src="audio/财富自由.mp3" preload="auto">你的浏览器不支持audio</audio>
+    </div>
+    <div class="content">
+        <div class="triangle-down"></div>
+        <p>点击得票数最多人的头像</p>
+
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">1号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">2号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">警察</div>
+                <div class="num">3号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">法官</div>
+                <div class="num">4号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">狙击手</div>
+                <div class="num">5号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">医生</div>
+                <div class="num">6号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">杀手</div>
+                <div class="num">7号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">8号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">9号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">杀手</div>
+                <div class="num">10号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">11号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="bbox">
+            <div class="box">
+                <div class="career">水民</div>
+                <div class="num">12号</div>
+            </div>
+            <img class="sprite" src="images/sprite.png"/>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <p>投死</p>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
